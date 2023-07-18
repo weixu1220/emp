@@ -1,6 +1,18 @@
-function SearchBar() {
-    return <input className="search" placeholder="Search by name or title..."/>;
+import { useState } from "react";
+
+
+function SearchBar({ filterEmployee}) {
+  const [searchInput, setSearchInput] = useState("");
+
+  function handleChange(e) {
+    setSearchInput(e.target.value);
+    filterEmployee(searchInput);
   }
-  
-  export default SearchBar;
+
+  return (
+    <input  value={searchInput} onChange={handleChange} className="search" />
+  );
+}
+
+export default SearchBar;
   

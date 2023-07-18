@@ -1,6 +1,7 @@
 function Header({ header }) {
+    let spacing = "<      ";
     return ( 
-        <h1>{header}</h1>
+        <h1>{"<"}<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>{header}</h1>
      );
 }
 

@@ -194,3 +194,27 @@ img {
     width: 300px;
   }
 }
+.resultbox {
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 0.5em;
+}
+
+.resultbox .grey {
+  border-bottom: 1px solid grey;
+}
+.resultbox :first-child,
+.resultbox :last-child {
+  border: none;
+}
+.resultbox .elist {
+  border-bottom: 1px solid grey;
+}
+.grey h4,
+.grey h4 + p {
+  padding-left: 1em;
+}
+/* span{
+  margin-right:30px;
+  color:green;
+} */
